@@ -1,0 +1,18 @@
+.btn {
+  all: unset;
+  font-weight: bold;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 3px;
+  padding: 3px 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.btn:active {
+  background-color: rgb(120, 89, 233);
+  border-color: rgb(120, 89, 233);
+}
