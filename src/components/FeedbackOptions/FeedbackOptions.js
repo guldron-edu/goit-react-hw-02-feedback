@@ -1,7 +1,8 @@
-import React from 'react';
-import styles from './FeedbackOptions.module.css';
+import React from "react";
+import styles from "./FeedbackOptions.module.css";
+import PropTypes from "prop-types";
 
-export default function Feedback({ handleFeedback }) {
+function Feedback({ handleFeedback }) {
   return (
     <div className={styles.feedback}>
       <button
@@ -31,3 +32,9 @@ export default function Feedback({ handleFeedback }) {
     </div>
   );
 }
+
+Feedback.propTypes = {
+  handleFeedback: PropTypes.func.isRequired,
+};
+
+export default Feedback;
